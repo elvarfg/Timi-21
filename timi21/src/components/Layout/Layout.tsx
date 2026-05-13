@@ -11,11 +11,26 @@ function Layout({ children }: { children: React.ReactNode }) {
           {" "}
           Home{" "}
         </NavLink>
+
         <NavLink
           to="/framer-motion"
           className={({ isActive }) => (isActive ? "active-nav" : "nav")}
         >
           Framer Motion
+        </NavLink>
+
+        <NavLink
+          to="/lucide-react"
+          className={({ isActive }) => (isActive ? "active-nav" : "nav")}
+        >
+          Lucide React
+        </NavLink>
+
+        <NavLink
+          to="/canvas-confetti"
+          className={({ isActive }) => (isActive ? "active-nav" : "nav")}
+        >
+          Canvas Confetti
         </NavLink>
       </nav>
       {children}
